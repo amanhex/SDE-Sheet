@@ -8,7 +8,7 @@ using namespace std;
 vector<int> pascalTriangleVar2Brute(int num){
     vector<int> ans;
     int res = 1;
-    for (int i = 0; i < num; i++){
+    for (int i = 0; i <= num; i++){
         for (int j = 0; j < i; j++){
             res *= (num - j);
             res /= (j + 1);
@@ -16,7 +16,6 @@ vector<int> pascalTriangleVar2Brute(int num){
         ans.push_back(res);
         res = 1;
     }
-    ans.push_back(1);
     return ans;
 }
 
