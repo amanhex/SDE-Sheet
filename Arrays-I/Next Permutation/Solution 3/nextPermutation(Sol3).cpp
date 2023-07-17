@@ -22,14 +22,12 @@ void nextPermutationSol3(vector<int>& arr){
         reverse(arr.begin(), arr.end());
         return;
     }
-    int nextGreater = -1;
     for (int i = n - 1; i >= index; i--){
         if (arr[i] > arr[index]){
-            nextGreater = i;
+            swapp(arr, i, index);
             break;
         }
     }
-    swapp(arr, nextGreater, index);
     reverse(arr.begin() + index + 1, arr.end());
     return;
 }
