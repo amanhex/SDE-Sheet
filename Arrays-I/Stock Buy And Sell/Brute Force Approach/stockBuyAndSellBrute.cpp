@@ -1,4 +1,4 @@
-// Brute Force Approach: Iterate the array twice (check the profit with for each element) and return the maxProfit
+// Brute Force Approach: Iterate the array twice (check the profit for each element) and return the maxProfit
 
 #include <bits/stdc++.h>
 using namespace std;
