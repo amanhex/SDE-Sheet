@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void rotate(vector<vector<int>>& matrix){
+void rotateBrute(vector<vector<int>>& matrix){
     int n = matrix.size();
     vector<vector<int>> temp(n, vector<int>(n, 0));
     int index = 0;
@@ -25,7 +25,7 @@ int main(){
             cin >> matrix[i][j];
     }
 
-    rotate(matrix);
+    rotateBrute(matrix);
 
     for (int i = 0; i < size; i++){
         for (int j = 0; j < size; j++)
