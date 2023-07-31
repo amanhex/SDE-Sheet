@@ -20,7 +20,7 @@ void permuteBetter(vector<int> arr, vector<vector<int>>& res, int index){
         res.push_back(arr);
         return;
     }
-    for (int i = 0; i < arr.size(); i++){
+    for (int i = index; i < arr.size(); i++){
         swapp(arr, i, index);
         permuteBetter(arr, res, index + 1);
         swapp(arr, i, index);
