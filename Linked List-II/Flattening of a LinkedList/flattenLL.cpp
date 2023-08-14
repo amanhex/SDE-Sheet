@@ -27,7 +27,7 @@ Node* mergeTwoLL(Node* l1, Node* l2){
     }
     else{
       temp -> bottom = l2;
-      temp = temp -> next;
+      temp = temp -> bottom;
       l2 = l2 -> bottom;
     }
   }
