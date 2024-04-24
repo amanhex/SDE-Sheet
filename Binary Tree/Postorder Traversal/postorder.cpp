@@ -5,7 +5,7 @@ struct Node {
     int data;
     Node* left;
     Node* right;
-    Node (int val) : data(val), left(nullptr), right(nullptr) {};
+    Node (int val) : data(val), left(nullptr), right(nullptr) {}
 };
 
 void postorder(Node* root, vector<int>& ans){
