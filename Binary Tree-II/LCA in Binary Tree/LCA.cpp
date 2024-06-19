@@ -18,7 +18,7 @@ TreeNode *LCA(TreeNode *root, TreeNode *p, TreeNode *q) {
   if (!left)
     return right;
   else if (!right)
-    return right;
+    return left;
   else
     return root;
 }
